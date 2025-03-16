@@ -23,8 +23,16 @@ class WebViewFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.webView.loadUrl("https://www.google.com")
+        binding.webView.loadUrl("https://comic.naver.com/")
         binding.webView.webViewClient = WebtoonWebViewClient(binding.progressBar)
         binding.webView.settings.javaScriptEnabled = true
+    }
+
+    fun canGoBack(): Boolean {
+        return binding.webView.canGoBack()
+    }
+
+    fun goBack() {
+        binding.webView.goBack()
     }
 }
