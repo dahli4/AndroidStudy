@@ -59,6 +59,11 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.ktx)
     implementation(libs.coil)
+    implementation(libs.okhttp)
+    implementation(libs.retrofit)
+    implementation(libs.gson)
+    implementation(libs.coroutines)
+    implementation(libs.paging)
 }
 
 kapt {

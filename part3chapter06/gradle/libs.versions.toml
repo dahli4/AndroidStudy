@@ -13,6 +13,11 @@ kapt = "1.9.0"
 hilt = "2.51.1"
 ktx = "1.6.1"
 coil = "2.2.2"
+okhttp = "4.10.0"
+retrofit = "2.11.0"
+gson = "2.11.0"
+coroutines = "1.8.1"
+paging = "3.3.6"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -28,6 +33,11 @@ hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.r
 hilt-android-test = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hilt" }
 ktx = {group = "androidx.activity", name = "activity-ktx", version.ref = "ktx"}
 coil = {group = "io.coil-kt", name = "coil", version.ref = "coil"}
+okhttp = {group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp"}
+retrofit = {group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit"}
+gson = {group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "gson"}
+coroutines = {group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines"}
+paging = {group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "paging"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
