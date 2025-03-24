@@ -44,7 +44,7 @@ object RetrofitModule {
         gsonConverterFactory: GsonConverterFactory
     ): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://192.168.31.16:3030/api/v1/fastcampus/")
+            .baseUrl("http://192.168.31.16:3030/api/v1/fastcampus/")
             .client(okHttpClient.build())
             .addConverterFactory(gsonConverterFactory)
             .build()
