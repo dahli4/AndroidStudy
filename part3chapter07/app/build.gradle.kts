@@ -56,6 +56,11 @@ dependencies {
     implementation(libs.ktx)
     implementation(libs.coroutines)
 
+    implementation(libs.room.runtime)
+    kapt(libs.room.compiler)
+    implementation(libs.room.ktx)
+    annotationProcessor(libs.room.compiler)
+
     androidTestImplementation(libs.hilt.android.test)
     androidTestAnnotationProcessor(libs.hilt.compiler)
 }
