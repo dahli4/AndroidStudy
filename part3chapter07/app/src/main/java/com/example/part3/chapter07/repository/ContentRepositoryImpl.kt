@@ -10,4 +10,12 @@ class ContentRepositoryImpl(private val contentDao: ContentDao) : ContentReposit
     override suspend fun insert(item: ContentEntity) {
         contentDao.insert(item)
     }
+
+    override suspend fun modify(item: ContentEntity) {
+        contentDao.insert(item)
+    }
+
+    override suspend fun delete(item: ContentEntity) {
+        contentDao.delete(item)
+    }
 }

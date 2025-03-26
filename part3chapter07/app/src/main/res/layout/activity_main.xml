@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="데이터가 없습니다.\n데이터를 추가해주세요"
+            android:textAppearance="@style/TextAppearance.App.Small"
             android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +44,7 @@
             android:id="@+id/floatingButton"
             android:src="@drawable/baseline_add_24"
             android:onClick="@{() -> view.onClickAdd()}"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:tint="@color/white"/>
